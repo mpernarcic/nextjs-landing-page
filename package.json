@@ -4,8 +4,8 @@
   "private": true,
   "homepage": "https://mpernarcic.github.io/nextjs-landing-page/",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build && next export",
+    "dev": "next",
+    "build": "next build",
     "start": "next start",
     "postbuild": "next-sitemap",
     "predeploy": "npm run build",
