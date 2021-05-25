@@ -4,13 +4,12 @@
   "private": true,
   "homepage": "https://mpernarcic.github.io/nextjs-landing-page/",
   "scripts": {
-    "dev": "next",
+    "dev": "next dev",
     "build": "next build",
     "export": "next export",
     "start": "next start",
     "postbuild": "next-sitemap",
-    "predeploy": "npm run build",
-    "deploy": "rm -rf node_modules/.cache && rimraf out && next build && next export && touch out/.nojekyll && gh-pages -d out -t true"
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
