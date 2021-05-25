@@ -1,5 +1,5 @@
 {
-  "name": "landing-page",
+  "name": "nextjs-landing-page",
   "version": "0.0.1",
   "private": true,
   "homepage": "https://mpernarcic.github.io/nextjs-landing-page/",
@@ -7,7 +7,7 @@
     "dev": "next dev",
     "build": "next build && next export",
     "postbuild": "next-sitemap",
-    "predeploy": "npm build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
