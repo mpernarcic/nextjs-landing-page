@@ -10,7 +10,7 @@
     "start": "next start",
     "postbuild": "next-sitemap",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "rm -rf node_modules/.cache && rimraf out && next build && next export && touch out/.nojekyll && gh-pages -d out -t true"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
