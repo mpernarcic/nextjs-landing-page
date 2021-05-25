@@ -2,10 +2,13 @@
   "name": "landing-page",
   "version": "0.0.1",
   "private": true,
+  "homepage": "https://mpernarcic.github.io/nextjs-landing-page/",
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
-    "postbuild": "next-sitemap"
+    "postbuild": "next-sitemap",
+    "predeploy": "npm build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
